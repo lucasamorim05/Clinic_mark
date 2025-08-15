@@ -9,6 +9,20 @@ typedef struct{
     char medico [50];
 }Exame;
 
+void cadastra_exame(){
+    Exame novo;
+    FILE *file = fopen(AGENDA,"a");
+
+    if(file==NULL){
+        printf("Erro ao abrir o arquivo");
+        break;
+    }
+
+
+
+    fclose(file);
+}
+
 int main()
 {
     int opcao;
