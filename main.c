@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct{
+    char data [11];
+    char hora [6];
+    char paciente [100];
+    char exame [100];
+    char medico [50];
+}Exame;
+
 int main()
 {
     int opcao;
